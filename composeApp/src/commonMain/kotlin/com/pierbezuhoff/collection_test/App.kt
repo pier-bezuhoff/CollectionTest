@@ -1,6 +1,5 @@
 package com.pierbezuhoff.collection_test
 
-import androidx.collection.intSetOf
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -20,8 +19,6 @@ import collectiontest.composeapp.generated.resources.compose_multiplatform
 @Composable
 @Preview
 fun App() {
-    val intSet = intSetOf(1, 2, 3)
-    
     MaterialTheme {
         var showContent by remember { mutableStateOf(false) }
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
